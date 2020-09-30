@@ -19,7 +19,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'Hello, This World!'
+    return 'Hello, {}!'.format(aname)
 
 
 @app.route('/debug-sentry')
